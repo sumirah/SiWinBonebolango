@@ -7,17 +7,17 @@ import retrofit2.http.Query
 
 interface SPBEDBApi {
 
-    @GET("/wina/profile.php")
+    @GET("/wina/????.php")
     fun getProfil(): Call<MutableList<Profil>>
 
-    @GET("wina/profile.php")
+    @GET("wina/????.php")
     fun getProfilDetailId(@Query("id") id: String?): Call<ProfilDetailResponses>
 
     //Responsenya harus bentuk MutableList, karna bentuk response json yg didapet langsung array yang tdk memiliki nama variable di depan
-    @GET("/wina/spbe.php")
+    @GET("/wina/????.php")
     fun getSpbe(): Call<MutableList<Spbe>>
 
-    @GET("wina/spbe.php")
+    @GET("wina/????.php")
     fun getSpbeDetailId(@Query("id") id: String?): Call<SpbeDetailResponses>
 
 
