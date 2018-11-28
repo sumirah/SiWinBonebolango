@@ -10,7 +10,7 @@ object ApiRepository {
 //    }
 
 
-    val BASE_URL = "http://www.opendata.bonebolangokab.go.id"
+    val BASE_URL = "http://www.bonebolangokab.go.id"
     val retrofit = Retrofit.Builder()
         .addConverterFactory(GsonConverterFactory.create())
         .baseUrl(BASE_URL)
